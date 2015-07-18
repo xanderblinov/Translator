@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/cont_title"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xanderblinov.translator"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:background="@color/primary_dark"
+    tools:ignore="ResAuto,RtlHardcoded,ContentDescription">
+
+    <ImageView
+        android:id="@+id/back_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_standard"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:src="@drawable/back_icon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/header_txt"
+        style="@style/Translator.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_standard_half"
+        android:layout_marginTop="@dimen/margin_standard_half"
+        android:layout_marginLeft="@dimen/title_margin_left"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/text_primary_dark"
+        tools:ignore="RelativeOverlap" />
+
+    <android.support.v7.widget.ActionMenuView
+        android:id="@+id/view_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:minWidth="56dp"
+        android:paddingTop="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/Base.Translator.Toolbar" />
+</RelativeLayout>

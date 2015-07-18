@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:activity=".ui.activities.SignInActivity"
+    tools:ignore="ResAuto,RtlHardcoded,RtlSymmetry"
+    android:layout_marginTop="@dimen/margin_standard_half"
+    android:layout_marginBottom="@dimen/margin_standard_half">
+
+    <ListView
+        android:id="@+id/words_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:paddingTop="@dimen/margin_standard_half"
+        android:paddingBottom="@dimen/margin_standard_half"
+        android:dividerHeight="@dimen/margin_standard_half" />
+
+    <RelativeLayout
+        android:id="@+id/error_cont"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/yandex_disclaimer_txt"
+        android:layout_margin="@dimen/margin_standard_half"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/layout_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:activity=".ui.activities.SignInActivity"
+    tools:ignore="ResAuto,RtlHardcoded,RtlSymmetry">
+
+    <include
+        layout="@layout/layout_action_bar"
+        android:id="@+id/cont_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <ListView
+            android:id="@+id/languages_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/yandex_disclaimer_txt"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/margin_standard_half"
+            android:paddingTop="@dimen/margin_standard_half"
+            android:paddingBottom="@dimen/margin_standard_half"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/error_cont"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/yandex_disclaimer_txt"
+            android:visibility="gone">
+
+            <include
+                layout="@layout/layout_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/yandex_disclaimer_txt"
+            style="@style/Translator.TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_standard_half"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

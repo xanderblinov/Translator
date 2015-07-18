@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Translator" />
+
+    <style name="Translator.Toolbar" parent="Base.Translator.Toolbar">
+        <item name="android:paddingTop">24dp</item>
+    </style>
+
+    <style name="Translator.TopGroup">
+        <item name="android:paddingTop">@dimen/status_bar_height</item>
+    </style>
+
+</resources>

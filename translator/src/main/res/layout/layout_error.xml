@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/error_cont"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_standard_half"
+    tools:ignore="RtlHardcoded,ContentDescription">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_standard_half"
+        android:src="@drawable/ic_action_about" />
+
+    <TextView
+        android:id="@+id/error_title_txt"
+        style="@style/Translator.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_standard_half"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/error_description_txt"
+        style="@style/Translator.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_standard_half"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/retry_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_standard_half"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/retry" />
+
+</LinearLayout>

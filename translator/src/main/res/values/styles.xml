@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="Base.Translator.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="Translator.Toolbar" parent="Base.Translator.Toolbar" />
+
+    <style name="Translator.TextView" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="Translator.TextView.Title">
+        <item name="android:textSize">@dimen/text_big</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Translator.TextView.Head">
+        <item name="android:textSize">@dimen/text_extra_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

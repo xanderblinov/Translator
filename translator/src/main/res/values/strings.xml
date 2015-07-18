@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Translator</string>
+    <string name="action_settings">Select Language</string>
+    <string name="yandex_disclaimer"><![CDATA[<a href=\"http://translate.yandex.com/\">Powered by Yandex.Translate</a>]]></string>
+    <string name="action_add_word">Add Word</string>
+    <string name="no_words_title">Add words</string>
+    <string name="no_words_message">Words with translations will be shown there</string>
+    <string name="api_key_error_title">Problem with yandex Api Key</string>
+    <string name="api_key_error_message">Ask for developer to change Yandex Api Key</string>
+    <string name="limit_error_message">Try Again Later</string>
+    <string name="limit_error_title">You have reached the limit</string>
+    <string name="translation_text_error_title">Unable to translate</string>
+    <string name="translation_text_too_long_error_message">The text size exceeds the maximum.</string>
+    <string name="translation_text_unproceccable_error_message">The text could not be translated</string>
+    <string name="translation_text_lang_not_supported_error_message">The specified translation direction is not supported.</string>
+    <string name="no_network_error_title">Connection error.</string>
+    <string name="no_network_error_message">Failed to query the translation server. Check your Internet connection and try again.</string>
+    <string name="server_error_title">The server is under maintenance</string>
+    <string name="server_error_message">Please try again later.</string>
+    <string name="unknown_error_title">Unknown Error</string>
+    <string name="unknown_error_message">Please try again later.</string>
+    <string name="retry">Retry</string>
+    <string name="added_word_reg">Word \'%1$s\' was successfully added</string>
+    <string name="hint_translate">Word to be translated</string>
+    <string name="hint_search">Find in the dictionary</string>
+    <string name="add_word_reg">Translator %1$s</string>
+    <string name="word_list_reg">Dictionary %1$s</string>
+    <string name="select_langugage_header">Select Language</string>
+
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="actionbar_height">48dp</dimen>
+    <dimen name="title_margin_left">80dp</dimen>
+</resources>
